@@ -93,7 +93,7 @@ const Buscador = ({setData}) => {
       </div>
 
       {countries && (
-        <div>
+        <div className="continent">
           <label>Pais: </label>
           <select
             id="ciudades"
@@ -108,7 +108,7 @@ const Buscador = ({setData}) => {
       )}
 
       {cities && (
-        <div>
+        <div className="continent">
           <label>Ciudad: </label>
           <select value={city} onChange={(e) => setCity(e.target.value)}>
             {cities.map((item) => (
