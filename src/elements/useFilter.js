@@ -6,7 +6,6 @@ export function useFilter (data) {
     const datos = data.list.filter(item => {
         const hora = new Date(item.dt_txt).getHours();
         return hora >= horaActual && hora < horaActual3
-
     })
     data.list = datos;
 

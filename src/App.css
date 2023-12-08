@@ -6,15 +6,15 @@ body{
 }
 .clima{
   text-align: center;
-  margin-top: 50px;
-  width: 90vw;
+  margin-top: 30px;
+  width: 95vw;
 }
 
 .containerCard{
   padding: 10px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 15px;
 }
 
 .card{
@@ -23,6 +23,10 @@ body{
   background: radial-gradient(circle,rgb(41, 188, 214) 0%, rgb(52, 147, 255) 70%);
   opacity: .8;
   border-radius: 5px;
+}
+
+.card .grados{
+  margin-top: 0px;
 }
 
 .datosClima{
@@ -107,7 +111,7 @@ select {
 @media (max-width: 1200px) {
   .clima{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
     width: 95vw;
   }
   .containerCard {
@@ -129,6 +133,6 @@ select {
   .containerCard {
     padding: 1px 10px;
     grid-template-columns: 1fr;
-    gap: 40px
+    gap: 30px
   }
 }

@@ -12,11 +12,12 @@ const CardClima = ({data}) => {
         return nombreDia;
     }
   return (
+    // card para mostrat los datos
     <div className="card">
       <h2>{day()}</h2>
       <h3>{data.weather[0].description}</h3>
       <img src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} />
-      <h3>{Math.round(data.main.temp)} °C</h3>
+      <h3 className='grados'>{Math.round(data.main.temp)} °C</h3>
       <div className="datosClima">
         <p><img src={tempMin} alt="" height="13" title='Temperatura Minima'/> {Math.round(data.main.temp_min)} °C</p>
         <p><img src={humedad} alt="" height="13" title='Humedad'/> {data.main.humidity}</p>
